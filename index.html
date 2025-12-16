@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio | Stephannie Martinez</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">Stephannie</div>
+
+      <nav id="navMenu" class="desktop-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="mobile-only"><button id="darkModeToggleMobile">🌓</button></li>
+        </ul>
+      </nav>
+
+      <button id="darkModeToggle" class="desktop-only" aria-label="Modo claro/oscuro">🌓</button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="hero fade-in">
+    <h1>Stephannie Martinez</h1>
+    <h2>Diseñadora Multimedia | UX/UI | Frontend Junior</h2>
+    <p>Creo experiencias digitales simples y funcionales</p>
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+  </section>
+
+  <!-- PROYECTOS (con pestañas) -->
+  <section id="proyectos" class="projects fade-in-up">
+  <h2 class="fade-in-up">Proyectos</h2>
+
+  <div class="tabs fade-in-up" role="tablist" aria-label="Categorías de proyectos">
+      <button class="tab active" data-tab="all">Todos</button>
+      <button class="tab" data-tab="web">Web</button>
+      <button class="tab" data-tab="packaging">Packaging</button>
+      <button class="tab" data-tab="maquetacion">Maquetación</button>
+      <button class="tab" data-tab="redes">Redes</button>
+      <button class="tab" data-tab="logotipos">Logotipos</button>
+  </div>
+
+    <!-- Contenedor de tarjetas (cada tarjeta incluye data para modal) -->
+    <div class="projects-grid">
+
+      <!-- WEB -->
+      <div class="project-card fade-in-up" data-category="web"
+     data-title="Web Restaurante"
+     data-desc="Diseño responsive y experiencia de usuario enfocada en reservas y menú."
+     data-images='["img/Pagina web.png","img/web.png"]'
+     data-link="https://diversitatludica.cat">
+        <img src="img/web.jpg" alt="Web Restaurante">
+        <h3>Web Esplai</h3>
+    </div>
+
+
+      <div class="project-card fade-in-up" data-category="web" data-title="Diseño App AudiStudy" data-desc="Rediseño de flujo y microinteracciones para transporte urbano." 
+      data-images='["img/audistudy_mockup_1.jpg","img/mockup audistudy 2.jpg"]'>
+        <img src="img/audistudy_mockup_1.jpg" alt="Diseño App AudiStudy">
+        <h3>Diseño App AudiStudy</h3>
+      </div>
+
+      <!-- PACKAGING -->
+      <div class="project-card fade-in-up" data-category="packaging" data-title="Packaging Café" data-desc="Concepto de packaging con materiales reciclados y tipografía artesanal." 
+      data-images='["img/bottle_mockup_espuma_rosa@1x_1-1.png","img/mockup_disco_cottons_rosa.png"]'>
+        <img src="img/Espuma_cottons_final_Mesa de trabajo 1 copia 2.jpg" alt="Packaging Café">
+        <h3>Packaging Espuma</h3>
+      </div>
+
+      <div class="project-card fade-in-up" data-category="packaging" data-title="Eco Packaging" data-desc="Líneas limpias y etiquetas sostenibles." 
+      data-images='["img/Cajas_organic_cotton_mismo tamaño-imágenes-0.jpg","img/Cajas_organic_cotton_mismo tamaño-imágenes-3.jpg"]'>
+        <img src="img/Cajas_organic_cotton_mismo tamaño-imágenes-1.jpg" alt="Eco Packaging">
+        <h3>Packaging</h3>
+      </div>
+
+      <!-- MAQUETACIÓN -->
+      <div class="project-card fade-in-up" data-category="maquetacion" data-title="Revista Minimal" data-desc="Maquetación centrada en jerarquía tipográfica y ritmo visual." data-images='["img/mockup travel2.jpg","img/mockup travel3.jpg"]'>
+        <img src="img/mockup travel.jpg" alt="Revista Minimal">
+        <h3>Revista Minimal</h3>
+      </div>
+
+      <div class="project-card fade-in-up" data-category="maquetacion" data-title="Cartel publicitario para marca europea de infusiones premium" 
+      data-desc="Diseño de cartel editorial para una marca de infusiones naturales.
+      Busqué transmitir calma y elegancia mediante una composición limpia, tipografía serif y una paleta suave inspirada en rituales de bienestar." 
+      data-images='["img/campañapubli.jpg","img/Mesa de trabajo 1.png"]'>
+        <img src="img/campañapubli.jpg" alt="Revista Minimal">
+        <h3>Cartel publicitario</h3>
+      </div>
+
+      <!-- REDES -->
+      <div class="project-card fade-in-up" data-category="redes" data-title="Campaña Redes" data-desc="Assets para redes sociales: posts, stories y adaptaciones." 
+      data-images='["img/design-bubli_bolas.jpg","img/publi_lumen.jpg"]'>
+        <img src="img/redes.jpg" alt="Campaña Redes">
+        <h3>Campaña Redes</h3>
+      </div>
+
+      <!-- LOGOTIPOS -->
+      <div class="project-card fade-in-up" data-category="logotipos" data-title="Convivium – Identidad Visual para Proyecto Comunitario" 
+      data-desc="Convivium nace como un símbolo de encuentro: dos personas que se conectan en un movimiento continuo que fluye como la vida compartida. La espiga de trigo se convierte en un gesto de unión, de aquello que se recoge y se comparte en comunidad. La identidad respira suavidad, equilibrio y calidez, reflejando una marca que pone a las personas en el centro." 
+      data-images='["img/mockuptarjetas.jpg","img/desing_convivium.jpg"]'>
+        <img src="img/conviviummoc.jpg" alt="Logo Minimal">
+        <h3>Convivium – Identidad Visual</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal (galería por proyecto) -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+
+      <div class="carousel">
+        <button class="prev-btn" aria-label="Anterior">&#10094;</button>
+        <div class="carousel-track"></div>
+        <button class="next-btn" aria-label="Siguiente">&#10095;</button>
+      </div>
+
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a id="modalLink" href="#" target="_blank" class="btn">Ver proyecto</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre mí -->
+<section id="sobre-mi" class="about">
+  <h2 class="fade-in-up">Sobre mí</h2>
+
+  <div class="about-content">
+    <img src="img/stepha.png" 
+         alt="Stephannie Martinez retrato" 
+         class="fade-in-up">
+
+    <div class="about-text fade-in-up">
+      <p>
+        Soy diseñadora multimedia formada en Barcelona, con experiencia en
+        diseño gráfico, editorial, packaging y desarrollo web. Actualmente me
+        especializo en UX/UI y frontend, uniendo creatividad y funcionalidad
+        para crear experiencias digitales claras y modernas.
+      </p>
+      <a href="pdf/CV Stephannie Martinez.pdf" target="_blank" class="btn fade-in-up">Descargar CV</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact fade-up">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Stephannie Martinez – Diseñadora Multimedia</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
